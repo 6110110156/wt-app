@@ -6,10 +6,11 @@ import ZipCodeScreen from './screen/ZipCodeScreen';
 import WeatherScreen from './screen/WeatherScreen';
 
 
+
 const Stack = createStackNavigator();
-export default function App() {
- 
- return (
+export default function App() { 
+   
+   return (
     <NavigationContainer>
       <Stack.Navigator>
       <Stack.Screen name="Home" component={ZipCodeScreen} />
@@ -17,5 +18,7 @@ export default function App() {
       </Stack.Navigator>
  </NavigationContainer> 
  
- );
-}
+ 
+ );}
+ 
+
