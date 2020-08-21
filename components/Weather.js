@@ -5,6 +5,7 @@ import Forecast from './Forecast';
 
 export default function Weather(props) { 
     const [forecastInfo, setForecastInfo] = useState({
+        name:'-',
         main: '-', 
         description: '-',
         feels_like:0,
@@ -18,6 +19,7 @@ export default function Weather(props) {
         .then((response) => response.json())
         .then((json) => {
             setForecastInfo({
+                name:json.name,
                  main: json.weather[0].main,
                  description: json.weather[0].description,
                  feels_like:json.main.feels_like,
@@ -33,11 +35,13 @@ export default function Weather(props) {
 
    
     return (
-    <ImageBackground source={require("../bg2.jpg")} style={styles.backdrop}>
+    <ImageBackground source={require("../bg3.jpg")} style={styles.backdrop}>
         <View style={styles.background}>
-            <Text style={styles.testst}>Zip Code is {props.zipCode}</Text>
+        <Text style={styles.testst}> Weather forecast</Text>
+        <Forecast {...forecastInfo}/>
+        <Text style={styles.testst2}> Code is {props.zipCode}</Text>
             
-            <Forecast {...forecastInfo}/>
+            
        </View>
     </ImageBackground>
     );
@@ -51,15 +55,20 @@ export default function Weather(props) {
        }
        ,background:{
            flexDirection: 'column',
-          alignItems:'center',
+          alignItems:'stretch',
           backgroundColor:'#000',
           opacity:0.7 //ความเข้มของพื้นหลังสีดำ
 
        }
        ,testst: {
         color: '#fff',
-        fontSize:25,
-        textAlign:'center',
+        fontSize:35,
+        textAlign:'center'
+       }
+        ,testst2: {
+            color: '#fff',
+            fontSize:20,
+            textAlign:'right'
      
         
       }
