@@ -1,0 +1,22 @@
+น.ส.ตันหยง ทิพย์วงศ์เมฆ 6110110156 sec02
+
+p.6.1changestylezipcodescreen
+เพิ่มstyle ต่างๆและเพิ่มคำบรรยายต่างๆ
+
+p.7.2 addFeellike
+เพิ่มค่า Feel Like
+
+p.7.3 addnameandsytle
+แก้ไขstyle,เปลี่ยนพื้นหลัง ,เพิ่มคำบรรยาย
+
+p.6.4 showimage
+เพิ่มการแสดงรูป ในหน้า Weather
+
+p.6.5addplaceandcode
+เพิ่มข้อมูลสถานที่ (Bangkok ,Mae Hong Son)
+
+addimge,addimge2
+แก้ไขการแสดงรูปในหน้าweatherให้แสดงรูปในแต่ละจังหวัด
+
+addLampang,addLam2 
+แก้ไขข้อมูลและการแสดงรูปเป็นของจังหวัดLampang
