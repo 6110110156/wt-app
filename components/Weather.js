@@ -52,7 +52,7 @@ export default function Weather(props) {
         img=require("../bkk.jpg")
     }
     else if(props.zipCode=='54000'){
-        img=require("../man.jpg")
+        img=require("../lam.jpg")
     }
 
    
