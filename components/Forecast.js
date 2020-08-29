@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, StyleSheet } from 'react-native';
 
 export default function Forecast(props) {
-    return (
+  return (
     <View>
         <Text style={styles.testst}>At {props.name}</Text>
          <Text style={styles.testst}>weater: {props.main}({props.description})</Text>
