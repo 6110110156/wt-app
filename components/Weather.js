@@ -36,22 +36,22 @@ export default function Weather(props) {
     if(props.zipCode=='90110'){
         img=require("../Hat.jpg")
     }
-    else if(props.zipCode='92000'){
+    else if(props.zipCode=='92000'){
         img=require("../tra.jpg")
     }
-    else if(props.zipCode='50000'){
+    else if(props.zipCode=='50000'){
         img=require("../chai.jpg")
     }
-    else if(props.zipCode='40000'){
+    else if(props.zipCode=='40000'){
         img=require("../kon.jpg")
     }
-    else if(props.zipCode='20000'){
+    else if(props.zipCode=='20000'){
         img=require("../cho.jpg")
     }
-    else if(props.zipCode='10100'){
+    else if(props.zipCode=='10100'){
         img=require("../bkk.jpg")
     }
-    else if(props.zipCode='58000'){
+    else if(props.zipCode=='58000'){
         img=require("../man.jpg")
     }
 
